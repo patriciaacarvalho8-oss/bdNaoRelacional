@@ -1,0 +1,3 @@
+db("aula").collection("personagens").find().sort({nome: 1});
+
+db("aula").collection("personagens").find().sort({nome: -1});
