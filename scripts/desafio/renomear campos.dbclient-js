@@ -1,0 +1,12 @@
+// Active: 1774550456442@@patriciaacarvalho8_db_user@null@aula
+db("aula").collection("personagens").aggregate([
+    {
+        $addFields:{
+            nomeCompleto: "$nome",
+        },
+    },
+    {
+        $unset: "nome",
+    },
+]);
+

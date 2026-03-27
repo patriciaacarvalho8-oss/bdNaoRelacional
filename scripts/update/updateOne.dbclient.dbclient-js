@@ -1,0 +1,31 @@
+// Active: 1774550456442@@patriciaacarvalho8_db_user@null@aula
+db("aula").collection("personagens").updateOne({
+    nome: "chopper"
+},
+    {
+
+        $set: {
+            fruta: "Hito Hito no Mi"
+        },
+
+    },
+)
+
+db("aula").collection("personagens").updateOne(
+    {idade: 19},
+    {
+        $inc:{
+            idade: 1,
+        },
+    },
+);
+
+db("aula").collection("personagens").findOneAndUpdate(
+    {idade: 20},
+    {
+        $inc:{
+            idade: -1,
+        },
+    },
+    
+);

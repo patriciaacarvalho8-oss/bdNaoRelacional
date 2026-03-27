@@ -1,1 +1,1 @@
-db("aula").collection("personagem").find().limit(1);
+db("aula").collection("personagem").find().limit();

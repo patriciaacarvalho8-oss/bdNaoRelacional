@@ -1,35 +1,6 @@
-db("aula").collection("personagens").find({
-    nome: "Monkey D' Luffy",
-});
-
-db("aula").collection("personagens").find({
-    idade: {
-        $gt: 12,
-    },
-});
-
-db("aula").collection("personagens").find({
-    idade: {
-        $lt: 19,
-    },
-});
-
-db("aula").collection("personagens").find({
-    idade: {
-        $lt: 21,
-    },
-});
-
-db("aula").collection("personagens").find({
-    idade: 19,
-    nome: "Monkey D' Luffy",
-});
-
-db("aula").collection("personagens").find({
-    idade: {
-        $gt: 19,
-        $lt: 12,
-    },
-});
-
-db("aula")
+// Active: 1774550456442@@patriciaacarvalho8_db_user@null@aula
+db("aula").collection("perdonagens").find({
+     $not :{
+        idade: 19,
+    }
+})

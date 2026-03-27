@@ -1,0 +1,4 @@
+// Active: 1774550456442@@patriciaacarvalho8_db_user@null@aula
+db("aula").collection("personagens").countDocuments();
+
+db("aula").collection("personagens").countDocuments({idade: 19});
